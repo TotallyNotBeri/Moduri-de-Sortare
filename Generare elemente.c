@@ -196,6 +196,6 @@ int main() {
     free(arr);
     free(testArr);
 
-    printf("\nTest incheiat cu succes!\n");
+    printf("\nTest incheiat\n");
     return 0;
 }
