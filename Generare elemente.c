@@ -85,7 +85,7 @@ void merge_int(int arr[], int l, int m, int r) {
     while (i < n1) { arr[k] = L[i]; i++; k++; }
     while (j < n2) { arr[k] = R[j]; j++; k++; }
 
-    // Eliberam memoria locala
+    
     free(L);
     free(R);
 }
@@ -104,7 +104,7 @@ void mergeSort_int(int arr[], int l, int r) {
 
 int partition_int(int arr[], int low, int high) {
     int pivot = arr[high];
-    int i = low - 1; // Assignment unit
+    int i = low - 1; 
 
     for (int j = low; j <= high - 1; j++) {
         if (arr[j] < pivot) {
@@ -143,10 +143,10 @@ int main() {
     int *arr = (int*)malloc(n * sizeof(int));
     int *testArr = (int*)malloc(n * sizeof(int));
 
-    // 1. REZOLVARE EROARE POINTER NULL IN MAIN
+    
     if (arr == NULL || testArr == NULL) {
         printf("Eroare critica: Nu s-a putut aloca memoria!\n");
-        return 1; // Oprim programul cu cod de eroare
+        return 1; 
     }
 
     srand((unsigned int)time(NULL));
