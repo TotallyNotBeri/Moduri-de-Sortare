@@ -3,7 +3,7 @@
 void cautaPereche(int arr[], int n, int suma_cautata) {
     int gasit = 0;
 
-    // Verificam toate combinatiile posibile
+    
     for(int i = 0; i < n - 1; i++) {
         for(int j = i + 1; j < n; j++) {
             if(arr[i] + arr[j] == suma_cautata) {
@@ -13,7 +13,7 @@ void cautaPereche(int arr[], int n, int suma_cautata) {
         }
     }
 
-    // Daca nu am gasit nimic
+    
     if(gasit == 0) {
         printf("-> Nu exista nicio pereche in vector care sa dea suma %d.\n", suma_cautata);
     }
